@@ -1,12 +1,10 @@
 # Tenpo Challenge - React App
 
-Una aplicación React que demuestra diferentes técnicas de renderizado de listas grandes con 2000 comentarios.
+Una aplicación React que demuestra una virtualización de 2000 comentarios.
 
 ## 🚀 Características
 
 - **Autenticación**: Sistema de login con protección de rutas
-- **Paginación**: Lista paginada con navegación por páginas
-- **Scroll Infinito**: Carga automática de contenido al hacer scroll
 - **Virtualización**: Renderizado eficiente de listas grandes
 - **Responsive**: Diseño adaptativo para móviles y desktop
 
@@ -28,7 +26,7 @@ Una aplicación React que demuestra diferentes técnicas de renderizado de lista
 
 1. **Clonar el repositorio**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/miloxp/tenpo-challenge
    cd tenpo-challenge
    ```
 
@@ -100,8 +98,6 @@ src/
 ├── context/            # Context de autenticación
 ├── pages/              # Páginas de la aplicación
 │   ├── Login.tsx
-│   ├── Paginated.tsx
-│   ├── InfiniteScroll.tsx
 │   └── Virtualized.tsx
 ├── services/           # Servicios API
 ├── types/              # Definiciones TypeScript
@@ -114,7 +110,6 @@ La aplicación usa **Tailwind CSS** para estilos. El diseño es completamente re
 
 - Header con navegación adaptativa
 - Menú hamburguesa para móviles
-- Tema claro/oscuro
 - Transiciones suaves
 
 ## 🔧 Configuración
