@@ -25,12 +25,14 @@ Una aplicación React que demuestra una virtualización de 2000 comentarios.
 ## 🔧 Instalación
 
 1. **Clonar el repositorio**
+
    ```bash
    git clone https://github.com/miloxp/tenpo-challenge
    cd tenpo-challenge
    ```
 
 2. **Instalar dependencias**
+
    ```bash
    npm install
    # o
@@ -38,6 +40,7 @@ Una aplicación React que demuestra una virtualización de 2000 comentarios.
    ```
 
 3. **Levantar el servidor de desarrollo**
+
    ```bash
    npm run dev
    # o
@@ -64,6 +67,7 @@ Para acceder a la aplicación, usa estas credenciales:
 ## 📱 Funcionalidades
 
 ### Lista Virtualizada (`/virtualized`)
+
 - Renderizado eficiente de listas grandes
 - Solo renderiza elementos visibles
 - Scroll suave y performante
@@ -115,10 +119,13 @@ La aplicación usa **Tailwind CSS** para estilos. El diseño es completamente re
 ## 🔧 Configuración
 
 ### Variables de Entorno
+
 No se requieren variables de entorno para el desarrollo local.
 
 ### API
+
 La aplicación usa la API de JSONPlaceholder para obtener datos de comentarios:
+
 - Endpoint: `https://jsonplaceholder.typicode.com/comments`
 - Los datos se expanden a 2000 comentarios localmente
 
@@ -127,6 +134,7 @@ La aplicación usa la API de JSONPlaceholder para obtener datos de comentarios:
 Para desplegar en producción:
 
 1. **Build de producción**
+
    ```bash
    npm run build
    ```
@@ -135,13 +143,10 @@ Para desplegar en producción:
 
 3. **Servir con cualquier servidor web estático**
 
-## 🤝 Contribución
+## 🤝 Propuesta de mejora sobre las llamadas usadas al backend
+1. Implementar endpoint paginado en lugar retornar los 2000 de golpe.
+2. Integrar React Query, para manejar cache del valor de las peticiones.
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
 
 ## 📄 Licencia
 
